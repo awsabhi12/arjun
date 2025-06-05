@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/yenrimedia/MavenJenkins.git'
+                git branch: 'master', url: 'https://github.com/awsabhi12/arjun.git'
             }
         }
         stage('Build') {
@@ -21,7 +21,7 @@ pipeline {
         }       
         stage('Run Application') {
             steps {
-                sh 'java -jar target/MavenJenkins-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/arjun-1.0-SNAPSHOT.jar'
             }
         }        
     }
